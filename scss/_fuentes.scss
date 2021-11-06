@@ -1,0 +1,64 @@
+@mixin fondoTitulos(){
+  background: $colorBgEstilo;
+  background: $colorGradienteTitulos;
+}
+
+h1{
+  font-weight: $pesoFuenteNormal;
+  font-size: 2em;
+  color: $colorTexto;
+  border-width: 0px 0px 0px 0px;
+  background: transparent;
+     
+   
+}
+.h1TextoGrandeIndex{
+      font-weight: $pesoFuenteSemiBold;
+      font-size: 5em;
+      text-shadow: 3px 3px 2px $colorFondoCeleste;
+     }
+.h1Titulos{
+      border-style: solid;
+      border-color: $colorBorde;
+      border-width: 1px 0px 1px 0px;
+      border-radius: 8px 8px 8px 8px;
+      @include fondoTitulos;
+    }
+
+ 
+h2{
+  font-weight: $pesoFuenteNormal;
+  font-size: 1.4em;
+  color: $colorTexto;
+}
+h3 {
+  font-weight: $pesoFuenteNormal;
+  font-size: 1.3em;
+  color: $colorTexto;
+}
+
+h4 {
+  font-weight: $pesoFuenteNormal;
+  font-size: 1.2em;
+  color: $colorTexto;
+}
+h5 {
+  font-weight: $pesoFuenteNormal;
+  font-size: 1.1em;
+  color: $colorTexto;
+}
+h6{
+  font-weight: $pesoFuenteLight;
+  font-size: 1em;
+  color: $colorTexto;
+}
+p {
+  font-weight: $pesoFuenteLight;
+  font-size: 1.1em;
+  color: $colorTexto;
+  
+}
+.especialParaCardCasosDeExito {
+    font-weight: $pesoFuenteExtraLight;
+    font-size: 1.0em;
+  }

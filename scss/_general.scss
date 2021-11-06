@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap');
+
+* {
+	margin: 0;
+    padding: 0;
+	}
+html {
+ scroll-behavior: smooth; }
+body {
+  font-family: 'Titillium Web', sans-serif;
+
+	}
+.imagenBg{
+  background-image: url("../media/ejemplopantallainicio2.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imagenBgOnePage{
+  background-image: url("../media/ejemplopantallainicio2.jpg");
+  height: 100Vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imagenBgOnePageNoBg{
+  background-image: none;
+  height: 100Vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

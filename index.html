@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VACUNAPP|Consulta</title>
+	<title>INICIO</title>
+	<meta charset=utf-8>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="VACUNAPP: Informese acerca de su vacunación">
+	<meta name="keywords" content="vacuna, vacunacion, inmunidad, covid, covid19, coronavirus, pandemia, calendario, pfizer, astrazeneca, cansino, sinovac, sinopharm, sputnikv">
+
+	<link rel="icon" type="image/png" href="media/favicon.png" sizes="64x64">
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.0/chart.min.js"></script>
+	<script src="utils/jquery-3.6.0.min.js"></script>
+	<script src="utils/moment.min.js"></script>
+</head>
+<body id="inicio" class="imagenBgOnePage img-fluid">
+	<header  class="estiloHeader">
+		<nav  class="navbar navbar-expand-lg navbar bg-transparent">
+	  		<button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	  			<div class="headerMobile">
+	  				<!-- <img src="media/datamatic3.png" class="imgLogoHeader"><img src="media/flechaabajo5.png" class="imgIconoMenuMobile"> -->
+	  			</div>
+	  		</button>
+	 		<div class="collapse navbar-collapse m-auto" id="navbarNavDropdown">
+	    		<ul class="navbar-nav rounded-bottom redondeadoBottom m-auto">
+	     			<li class="nav-item m-auto">
+	        			<a class="nav-link" href="index.html">VACUNACIÓN</a>
+	     			</li>
+	      			
+	      			<li class="nav-item m-auto">
+	        				<a class="navbar-brand" href="index.html"><img src="media/datamatic3.png" class="imgLogoHeader"></a>
+	      			</li>
+	      			<li class="nav-item m-auto">
+	        				<a class="nav-link" href="mapavacunas.html">VACUNACIÓN MUNDIAL</a>
+	      			</li>
+	      		</ul>
+	  		</div>
+		</nav>
+	</header>
+	<main class="card-deck estiloMain" >
+	<div class="container-fluid mb-4">
+	<div class="row">
+				
+	<div class="w-100 d-none d-sm-block d-lg-none"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="w-100 d-none d-sm-block d-lg-none"></div>
+				<div class="card col-12 col-md-12 col-lg-6 text-center align-content-center mr-4 estiloContenidos">
+  					<div class="card-body">
+   						 <h2 class="card-title">Ingrese sus datos personales</h2>
+						<form>
+							<div class="form-group">
+								<div>
+									<label for="formGroupExampleInput"></label>
+									<div class="displayInfo">
+										<input type="text" class="form-control estiloIngresoDeDatos" id="inputNombre" placeholder="Nombre">
+							    		<a data-toggle="popoverNombre" title="Info:" data-content="El campo nombre no debe estar vacío."><img src="media/infoingreso.png" id="infoNombre" class="ocultarConDisplay"></a>
+									</div>
+									<label for="formGroupExampleInput"></label>
+									<div class="displayInfo">
+									 	<input type="text" class="form-control estiloIngresoDeDatos" id="inputApellido" placeholder="Apellido">
+									 	<a data-toggle="popoverApellido" title="Info:" data-content="El campo apellido no debe estar vacío."><img src="media/infoingreso.png" id="infoApellido" class="ocultarConDisplay"></a>
+									</div>
+									<label for="exampleFormControlInput1"></label>
+							    	<div class="displayInfo">
+							    		<input type="number" class="form-control estiloIngresoDeDatos" id="inputEdad" placeholder="Edad: +12">
+										<a data-toggle="popoverEdad" title="Info:" data-content="El campo edad debe ser un número, mayor o igual a 12 años."><img src="media/infoingreso.png" id="infoEdad" class="ocultarConDisplay"></a>
+							    	</div>
+							    	<label for="formGroupExampleInput"></label>
+									<div class="displayInfo">
+										<input type="text" class="form-control estiloIngresoDeDatos" id="inputIdentificacion" placeholder="CI/DNI">
+										<a data-toggle="popoverCIDNI" title="Info:" data-content="El campo identificación no debe estar vacío."><img src="media/infoingreso.png" id="infoCIDNI" class="ocultarConDisplay"></a>
+									</div>
+									<label for="formGroupExampleInput"></label>
+
+									<div class="displayInfo">
+							    	<input type="text" class="form-control estiloIngresoDeDatos" id="inputTelefono" placeholder="Teléfono">
+							    	<a data-toggle="popoverTel" title="Info:" data-content="El campo teléfono no debe estar vacío."><img src="media/infoingreso.png" id="infoTel" class="ocultarConDisplay"></a>
+							    	</div>
+							    	<label for="formGroupExampleInput"></label>
+							    	<div class="displayInfo">
+							    	<input type="email" class="form-control estiloIngresoDeDatos" id="inputCorreo" placeholder="email@email.com">
+							    	<a data-toggle="popoverEmail" title="Info:" data-content="El campo e-mail no debe estar vacío y debe tener un formato válido, ej.: correo@gmail.com."><img src="media/infoingreso.png" id="infoEmail" class="ocultarConDisplay"></a>
+							    	</div>
+								</div>
+								<div class="margenesContacto">
+    								<button type="reset" class="btn btn-primary my-1 btnFooter text-center">Borrar datos</button>
+    							</div>
+							</div>
+						</form>
+			    	</div>
+  				</div>
+<div class="w-100 d-none d-sm-block d-lg-none"></div>
+				<div class="card col-12 col-md-12 col-lg-6 text-center align-content-center mr-4 estiloContenidos">
+  					<div class="card-body">
+  							<div class="margenesContacto">
+	    							<h4 for="exampleFormControlSelect2">Seleccione su país de residencia</h4>
+								    <div class="displayInfo">
+								    <select multiple class="form-control estiloIngresoDeDatos" id="inputPais">
+								      <option>Uruguay</option>
+								      <option>Argentina</option>
+								      <option>Chile</option>
+								    </select>
+								    <a data-toggle="popoverPais" title="Info:" data-content="Debe seleccionar un país de residencia"><img src="media/infoingreso.png" id="infoPais" class="ocultarConDisplay"></a>
+								    </div>
+								    <label for="formGroupExampleInput"></label>
+							    
+	    						</div>   
+   						 <h4 class="card-title">Seleccione su estado con respecto a la enfermedad</h4>
+						<form>
+
+							<div class="form-group">
+							<div>
+							<div class="input-group mb-3">
+  							<div class="input-group-prepend">
+    						<label class="input-group-text" for="inputGroupSelect01">Estado</label>
+  							</div>
+  							<select class="custom-select" id="inputEstado">
+   							<option value="1">Nunca cursé la enfermedad</option>
+    						<option value="2">Cursé una o más veces la enfermedad</option>
+    						<option value="3">Actualmente cursando</option>
+  							</select>
+
+						</div>
+						 <!-- class="ocultar" -->
+						<div id="finCursar" class="ocultarConDisplay">
+       						<label  for="fechaFinCursar">Seleccione su fecha de fin de la enfermedad:</label>
+							<input type="date" id="fechaFinCursar" name="trip-start"
+       						value=""
+       						min="" max="">
+       						<a data-toggle="popoverFechaFin" title="Info:" data-content="Debe ingresar una fecha de fin de curso de la enfermedad"><img src="media/infoingreso.png" id="infoFechaFin" class="ocultarConDisplay"></a>
+       					</div>
+    					<div class="margenesContacto">
+    						<button id="btnIngreso" type="button" class="btn btn-primary my-1 btnFooter text-center">Consultar</button>
+    						</div>
+    						<div>
+       						<label id="avisoVerificarDatos" class="ocultarConDisplay" >Verifique los datos ingresados</label>
+       					</div>
+							</div>
+						</form>
+
+						
+			    	</div>
+  				</div>
+
+
+			</div>
+				
+				<div class="w-100 d-none d-sm-block d-lg-none"></div>
+				<div id="cardConsulta" class="card col-12 col-md-12 col-lg-4 text-center align-content-center mr-4 estiloContenidos colapsar">
+  					<div class="card-body">
+   						 <h2 class="card-title">Seleccione los datos de su vacunación</h2>
+						<div class="input-group mb-3">
+  							<div class="input-group-prepend">
+    						<label class="input-group-text" for="inputGroupSelect01">Vacuna</label>
+  							</div>
+  							<select class="custom-select" id="inputVacuna">
+    						<!-- se cargan según el país -->
+  							</select>
+						</div>
+						<label for="dosis1">Seleccione fecha de la dosis 1:</label>
+						<input type="date" id="dosis1" name="trip-start"
+       					value=""
+       					min="" max="">
+       					<div id="segDosis" class="">
+       						<label  for="dosis2">Seleccione fecha de la dosis 2:</label>
+							<input type="date" id="dosis2" name="trip-start"
+       						value=""
+       						min="" max="">
+       					</div>
+       					<div>
+       						<label id="avisoFechas" class="ocultarConDisplay" >La fecha de la segunda dosis debe ser mayor a la primera</label>
+       					</div>
+       					<div>
+       						<label id="avisoFechasVacias" class="ocultarConDisplay" >Por favor ingrese correctamente las fechas de sus dosis</label>
+       					</div>
+       					<div class="margenesContacto">
+    						<button type="submit" id="btnConsultarInmunidad" class="btn btn-primary my-1 btnFooter text-center">Consultar inmunidad y revacunación</button>
+    					</div>
+			    	</div>
+  				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+	<div class="card col-12 col-md-12 col-lg-8 text-center align-content-center mr-4 estiloContenidos">
+  		<div class="card-body">
+   			<h2 class="card-title">Estadísticas de vacunas utilizadas</h2>
+			<div>
+				<canvas id="miGrafica" width="200" height="100"> </canvas>
+			</div>	
+    	</div>
+  	</div>
+</div>
+	<div class="flechaUp">
+			<a class="card-link"><img src="media/up32png.png" id="btnSubir"></a>
+	</div>
+</main>
+	<!-- Modal consulta -->
+	<div id="modalInfo" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content estiloContenidos">
+			    <div class="modal-header estiloContenidos">
+			        <h5 class="modal-title text-center" id="exampleModalLabel">Estas son sus fechas</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			        <form>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1"></label>
+    						<div class="alert alert-secondary textAreaFijo estiloIngresoDeDatos" id="fInmune" rows="3">
+    						</div>
+    						<label for="exampleFormControlTextarea1"></label>
+    						<div class="alert alert-secondary textAreaFijo estiloIngresoDeDatos" id="fRevacunacion" rows="3">
+    						</div>
+						</div>
+						
+					</form>
+			    </div>
+			    <div class="modal-footer estiloContenidos">
+			    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal cursando -->
+	<div id="modalInfoCursando" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content estiloContenidos">
+			    <div class="modal-header estiloContenidos">
+			        <h5 class="modal-title text-center" id="exampleModalLabel">Información</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			        <form>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1"></label>
+    						<div class="alert alert-secondary textAreaFijo estiloIngresoDeDatos" id="fInmune">Todavía no está habilitado a vacunarse, debe terminar de cursar la enfermedad, y a partir de esa fecha, después de los próximos 4 meses estaría habilitado a consultar por su vacunación.</div>
+						</div>
+						
+					</form>
+			    </div>
+			    <div class="modal-footer estiloContenidos">
+			    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal InfoHabilitado -->
+	<div id="modalInfoHabilitado" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content estiloContenidos">
+			    <div class="modal-header estiloContenidos">
+			        <h5 class="modal-title text-center" id="exampleModalLabel">Información</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			        <form>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1"></label>
+    						<div class="alert alert-secondary textAreaFijo estiloIngresoDeDatos" id="fInmune">Dejó de cursar la enfermedad hace más de 4 meses, está habilitado a consultar.</div>
+						</div>
+						
+					</form>
+			    </div>
+			    <div class="modal-footer estiloContenidos">
+			    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal InfoNoHabilitado -->
+	<div id="modalInfoNoHabilitado" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content estiloContenidos">
+			    <div class="modal-header estiloContenidos">
+			        <h5 class="modal-title text-center" id="exampleModalLabel">Información</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			    </div>
+			    <div class="modal-body">
+			        <form>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1"></label>
+    						<div class="alert alert-secondary textAreaFijo estiloIngresoDeDatos" id="noHabilitado"></div>
+						</div>
+						
+					</form>
+			    </div>
+			    <div class="modal-footer estiloContenidos">
+			    	<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+			    </div>
+			</div>
+		</div>
+	</div>		
+
+		<script src="js/auxiliares.js"></script>
+		<script src="js/clasesarrays.js"></script>
+		<script src="js/consultas.js"></script>
+		<script src="js/validarcrearpersona.js"></script>
+		<script src="js/estadisticasvacunas.js"></script>
+		<script src="js/proyectofinal.js"></script>
+		<script src="js/mapadatos.js"></script>
+
+		
+    	<script src="utils/bootstrap.bundle.min.js"></script>
+</body>
+</html>

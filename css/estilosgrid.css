@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap');
+
+* {
+	  margin: 0;
+    padding: 0;
+	}
+html {
+ scroll-behavior: smooth; }
+body {
+  font-family: 'Titillium Web', sans-serif;
+
+	}
+
+.estiloHeader{
+  z-index: 100;
+    /*background-color: white;*/
+  background: rgb(204,205,205);
+  background: linear-gradient(90deg, rgba(204,205,205,1) 
+  0%, rgba(126,193,228,1) 50%, rgba(204,205,205,1) 100%);   
+  margin-left: 1%;
+  position: fixed;
+  top:0;
+  width: 98%;
+  height: 3rem;
+  min-height: 60px;
+  border-bottom: 1px solid gray;
+  border-radius: 0px 0px 10px 10px;
+}
+nav a{
+  display: flex;
+  padding: 0 20px;
+  color: #060a0e;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+nav button{
+  display: flex;
+  padding: 0 20px;
+  color: #060a0e;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent; 
+  border-color: transparent; 
+
+}
+ nav a:hover{
+ transform: scale(1.1, 1.1);
+ transition: all 450ms ease-in-out;
+  
+}
+ nav button:hover{
+ transform: scale(1.0, 1.0);
+ transition: all 450ms ease-in-out;
+  
+}
+.estiloMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  margin-top:4rem;
+}
+.estiloMainContacto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 130vh;
+  margin-top:4rem;
+}
+.margenesContacto{
+  margin-top:1rem;
+}
+.estiloIFrameMapa{
+  width:20em;
+  height: 16em;
+  border-color: gray;
+  border-width: 1px 0px 1px 0px;
+  border-radius: 8px 8px 8px 8px;
+}
+.estiloMainOnePage{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  justify-content: center;
+  width: 100Vw;
+  min-height: 565vh;
+  margin-top:4rem;
+}
+#estiloFooter{
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-self: center;
+  z-index: 0;
+  background: rgb(204,205,205);
+  background: linear-gradient(90deg, rgba(204,205,205,0.29733900396095936) 0%, rgba(126,193,228,0.29733900396095936) 50%, rgba(204,205,205,0.3001401244091386) 100%); 
+  border-radius: 10px 10px 0px 0px;
+  flex-wrap: wrap;
+  margin-left: 1%;
+  width: 98%;
+  bottom: 0;
+  height: 5rem;
+  min-height: 10px;
+  padding-right: 10px;
+  justify-content: space-around;
+  align-content: center;
+  border-top: 1px solid gray;
+}
+
+.servicioEnPantallaCompleta{
+  height: 100Vh;
+}
+.padding5rem{
+  padding-top: 5rem;
+}
+
+.flechaUp{
+  display: flex;
+  position: relative;
+  margin-left: 95%;
+  margin-bottom: 3%;
+}
+
+ 
+#contenedorCasosDeExito{
+  display: flex;
+  position:relative;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-items: space-around;
+  align-items: center;
+  height: 100%;
+  margin-top: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+#contenedorCarrousellServicios{
+  display: flex;
+  position:relative;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-items: space-around;
+  align-items: center;
+  height: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+#contenedorTextosMultiplesCarrousell{
+  margin-right: 5.1rem;
+  height: 90%;
+}
+.contenedorTextosMultiples{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-between;
+  align-self: center ;
+  align-items: center;
+  height: 98%;
+  padding-top: 1%;
+  padding-bottom: 0;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  overflow-x: auto;
+  overflow-y: auto;
+  border-bottom: 0px solid red;
+  border-right: 0px solid red;
+  border-top: 0px solid red;
+  border-left: 0px solid red;
+
+}
+#imagenesMultiples{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-self: center ;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+#mitadDeSeccion{
+  display:flex;
+  width: 48%;
+  height: 96%;
+}
+
+
+
+h1{
+  font-weight: 400;
+  font-size: 2em;
+  color: #1a1f21;
+  border-width: 0px 0px 0px 0px;
+  background: transparent;
+}
+
+ .h1Titulos{
+  font-weight: 400;
+  color: #1a1f21;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px 0px 1px 0px;
+  border-radius: 8px 8px 8px 8px;
+  background: rgb(204,205,205);
+  background: linear-gradient(90deg, rgba(204,205,205,1) 
+  0%, rgba(126,193,228,1) 50%, rgba(204,205,205,1) 100%); 
+}
+
+h2{
+  font-weight: bold;
+  font-size: 1em;
+  color: #1a1f21;
+}
+h4 {
+  font-weight: bold;
+  font-size: 1em;
+  color: #1a1f21;
+}
+h5 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #1a1f21;
+}
+h6{
+  font-weight: normal;
+  font-size: 1em;
+  color: #1a1f21;
+}
+p{
+  font-weight: 300;
+  font-size: 1.1em;
+  color: #1a1f21;
+
+}
+.especial{
+  font-weight: 300;
+  font-size: 0.9em;
+  color: #1a1f21;
+
+}
+
+#textoGrande{
+  font-size: 5em;
+  font-weight: 600;
+}
+
+
+
+
+/*otrogradienteposible
+ background: rgb(204,205,205);
+background: linear-gradient(90deg, rgba(204,205,205,1) 25%, rgba(118,225,255,1) 50%, rgba(204,205,205,1) 75%); 
+*/
+.textAreaFijo{
+  resize: none;
+  overflow: scroll;
+}
+
+
+
+.estiloContenidos{
+  border-color: gray;
+  background: rgb(204,205,205);
+  background: linear-gradient(90deg, 
+  rgba(204,205,205,0.6978992280505952) 0%, 
+  rgba(126,193,228,0.89733900396095936) 50%, 
+  rgba(204,205,205,0.8001401244091386) 100%); 
+  border-width: 1px 0px 1px 0px;
+  border-radius: 8px 8px 8px 8px; 
+  
+}
+
+
+.redondeadoBottom{
+  border-bottom: 1px solid gray;
+  border-radius: 0px 0px 10px 10px;
+}
+.ancho200px{
+  width:200px;
+}
+
+
+ .transfLink img:hover{
+ transform: scale(1.1, 1.1);
+ transition: all 400ms ease-in-out;
+  
+}
+
+
+#envioDeCorreo{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-between;
+  align-self: center ;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  bottom: 40Vh;
+  z-index: 100;
+  height: 120px;
+  width: 200px;
+  background-color: #7ec1e4;
+  border-radius: 10px 0px 0px 10px;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  transform: translate(200px);
+  transition: all 500ms ease-in-out;
+}
+/*#envioDeCorreo.visible{
+  transform: translate(0px);
+}*/
+.imagenBg{
+  background-image: url("../media/ejemplo_pantallainicio2.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imagenBgOnePage{
+  background-image: url("../media/ejemplo_pantallainicio2.jpg");
+  height: 100Vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imgIconGrande{
+  width: 4em;
+}
+#imgIcon{
+  width: 2em;
+}
+#img80{
+  width: 80%;
+}
+#divImgCarrousell{
+  margin-left: 3.5rem;
+  height: 80%;
+}
+#divImgCarrousellServicios{
+  margin-left: 0;
+  height: 90%;
+}
+#propImgGrande{
+  border-radius: 10px 10px 10px 10px;
+  width: 90%;
+}
+#propImgMitad{
+  border-radius: 10px 10px 10px 10px;
+  width: 45%;
+}
+
+#divImgLink{
+  padding-top: .25rem;
+  padding-bottom: .50rem;
+  height: 3rem;
+ 
+}
+#propImgLink{
+  height: 100%;
+}
+#imgLogoFooter{
+  width: 10em;
+}
+#imgIconosFooter{
+  width: 2.1em;
+}
+
+
+
+.estiloBtnConsulta{
+  background-color: #7ec1e4;
+  color: #1a1f21;
+  height: 2.3em;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+
+  @media all and (max-width:768px){
+  
+ 
+ #textoGrande{
+  font-size: 40px;
+ }
+  #header ul{
+    background-color: none;
+  }
+  
+  #header .botonera a{
+    font-size: 12px;
+    
+  }
+  h1{
+  font-weight: bold;
+  font-size: 20px;
+  color: #1a1f21;
+}
+  h2{
+  font-weight: bold;
+  font-size: 15px;
+  color: #1a1f21;
+}
+h4 {
+  font-weight: bold;
+  font-size: 12px;
+  color: #060a0e;
+}
+h5 {
+  font-weight: bold;
+  font-size: 11px;
+  color: #1a1f21;
+}
+p{
+  font-weight: normal;
+  font-size: 12px;
+  color: #1a1f21;
+}
+h6{
+  font-weight: normal;
+  font-size: 12px;
+  color: #1a1f21;
+}
+  }
+
+@media all and (max-width:450px){
+  #divImgCarrousell{
+  margin-left: 0;
+  height: 90%;
+}
+#contenedorTextosMultiplesCarrousell{
+  margin-right: 0;
+  height: 90%;
+}
+  #imgLogoFooter{
+    width: 6.2em;
+  }
+  #imgIconosFooter{
+    width: 1.8em;
+  }
+#contenedorCasosDeExito{
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+ 
+}
+
+
+@keyframes animacion{
+  0%{
+     /*transform: rotateX(0) rotateY(0) rotateZ(0)*/
+    top: 0;
+  }
+  50%{
+    top: 100%;
+    /*transform: rotateX(360deg) rotateY(360deg) */
+    /*background: #000;*/
+  }
+  100%{
+    top:0;
+  }
+}
+.animar{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  animation-name: animacion;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  /*animation-delay: 5s;*/
+}
+
+
+@media all and (max-width:991px){
+  header nav ul{
+    background: rgb(204,205,205);
+    background: linear-gradient(90deg, rgba(204,205,205,1) 0%, rgba(126,193,228,1) 50%, rgba(204,205,205,1) 100%); 
+  }
+
+}
+@media all and (min-width:991px){
+  header nav ul li div{
+    background: rgb(204,205,205);
+    background: linear-gradient(90deg, rgba(204,205,205,1) 0%, rgba(126,193,228,1) 50%, rgba(204,205,205,1) 100%); 
+    border-bottom: 1px solid gray;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+}

@@ -1,0 +1,38 @@
+.estiloMain{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 2rem;
+	min-height: 90vh;
+	margin-top:4rem;
+}
+
+.estiloMainOnePage{
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	padding-top: 2rem;
+	width: 100Vw;
+	min-height: 565vh;
+	margin-top:4rem;
+}
+
+.estiloMainContacto{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100Vw;
+  align-items: center;
+  justify-content: center;
+  min-height: 120Vh;
+  margin-top:4rem;
+}
+	

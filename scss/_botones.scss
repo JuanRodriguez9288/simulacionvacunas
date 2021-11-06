@@ -1,0 +1,20 @@
+@mixin formatoBtnFooter(){
+  background-color: $colorFondoCeleste;
+  color: $colorTexto;
+  height: 2.3em;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom: 1px solid $colorBorde;
+  border-left: 1px solid $colorBorde;
+  border-right: 1px solid $colorBorde;
+  border-top: 1px solid $colorBorde;
+}
+@mixin formatoBtnModal(){
+  background-color: $colorFondoCeleste;
+  color: $colorTexto;
+  height: 1.9em;
+  border-radius: 5px 5px 5px 5px;
+  border-bottom: 1px solid $colorBorde;
+  border-left: 1px solid $colorBorde;
+  border-right: 1px solid $colorBorde;
+  border-top: 1px solid $colorBorde;
+}

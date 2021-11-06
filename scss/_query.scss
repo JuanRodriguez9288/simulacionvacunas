@@ -1,0 +1,91 @@
+@media all and (max-width:991px){
+  header nav ul{
+    @include fondoServiciosDesplegable;
+   }
+  .centradoContenidoServicios{
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    height:90Vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .redondeadoBottom {
+    border-bottom: 1px solid gray;
+    border-radius: 0px 0px 10px 10px;
+    }
+
+  #cTMCarrousell{
+    margin-right: 2.9rem;
+    height: 22rem;
+    min-height:20rem;
+    width: 26rem;
+    min-width: 18rem;
+    }
+}
+
+@media all and (min-width:991px){
+  header nav ul li div{
+     @include fondoServiciosDesplegable;
+    border-bottom: 1px solid gray;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+}
+@media all and (max-width:550px){
+ 
+  #contenedorCarrousellServicios{
+  display: flex;
+  position:relative;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-items: space-around;
+  align-items: center;
+  height: 140px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  overflow-y: auto;
+  }
+
+  .divImgCarrousell{
+    margin-left: 0;
+    height: 90%;
+  }
+
+  #cTMCarrousell{
+      margin-right: 0;
+      height: 22rem;
+      min-height:22rem;
+      width: 96%;
+      min-width: 96%;
+  }
+
+  #imgLogoFooter{
+    width: 6.2em;
+  }
+
+  #imgIconosFooter{
+    width: 1.8em;
+  }
+
+  #contenedorCasosDeExito{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+ 
+}
+
+@media all and (max-width:768px){
+  #imgLogoTitulo{
+    width: 0em;
+  }
+  
+  .h1TextoGrandeIndex{
+        font-size: 3.5em;
+  }
+}
